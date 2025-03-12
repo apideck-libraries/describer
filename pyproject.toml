@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "describer"
+version = "0.1.0"
+description = "Analyze codebases using AI - generate architectural overviews, documentation, explanations, bug reports and more"
+readme = "README.md"
+authors = [
+    {name = "Nick Lloyd", email = "nick@apideck.com"},
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "files-to-prompt",
+    "llm",
+    "llm-gemini",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/apideck-libraries/describer"
+"Bug Tracker" = "https://github.com/apideck-libraries/describer/issues"
+
+[project.scripts]
+describer = "describer.cli:main"
