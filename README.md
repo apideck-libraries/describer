@@ -22,8 +22,12 @@ For example, you can:
 
 ## Installation
 
+> **Note:** This package is currently in early development and not yet published to PyPI.
+
+Install directly from GitHub:
+
 ```bash
-pip install describer
+pip install git+https://github.com/apideck-libraries/describer.git
 ```
 
 Then set up your Gemini API key:
