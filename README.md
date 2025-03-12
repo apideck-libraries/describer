@@ -57,6 +57,57 @@ This project combines these tools:
 2. [llm](https://llm.datasette.io/en/stable/): A command-line tool for interacting with various LLMs.
 3. [llm-gemini](https://github.com/simonw/llm-gemini): A plugin for the `llm` tool to use Google's Gemini models.
 
+## Development
+
+If you want to contribute to this project, follow these steps to set up your development environment:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/apideck-libraries/describer.git
+   cd describer
+   ```
+
+2. Create a virtual environment:
+
+   ```bash
+   python -m venv venv
+   ```
+
+3. Activate the virtual environment:
+
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+   - On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+
+4. Install the package in development mode:
+
+   ```bash
+   pip install -e .
+   ```
+
+5. Install development dependencies:
+
+   ```bash
+   pip install build twine pytest
+   ```
+
+6. Set up your Gemini API key:
+
+   ```bash
+   llm keys set gemini
+   ```
+
+7. Run tests:
+   ```bash
+   python -m unittest discover tests
+   ```
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
