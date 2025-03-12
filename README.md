@@ -51,7 +51,27 @@ describer path/to/directory "document this codebase as if for a new developer"
 
 # Use a specific model
 describer -m gemini-1.5-pro-latest path/to/directory
+
+# Save output to a markdown file
+describer path/to/directory -o output.md
+describer path/to/directory "code review" --output review-results.md
+
+# Include files that would normally be excluded by .gitignore
+describer path/to/directory --ignore-gitignore
+
+# Exclude specific file patterns
+describer path/to/directory --exclude "*.test.ts"
+describer path/to/directory --exclude "*.min.js"
+
+# Don't show file count information
+describer path/to/directory --quiet
 ```
+
+By default, Describer respects `.gitignore` rules when scanning files, which means files and directories listed in your `.gitignore` file(s) will be excluded from the analysis. Use the `--ignore-gitignore` flag if you want to include these files.
+
+You can also use the `--exclude` flag to exclude specific files or patterns from the analysis. This is useful for filtering out test files, generated code, or other files that might not be relevant to your analysis.
+
+The tool will display the number of files being analyzed, which can help you confirm that the correct files are being included and that `.gitignore` rules are being applied as expected.
 
 ## How It Works
 

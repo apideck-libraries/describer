@@ -21,6 +21,7 @@ dependencies = [
     "files-to-prompt",
     "llm",
     "llm-gemini",
+    "markdown",
 ]
 
 [project.urls]
