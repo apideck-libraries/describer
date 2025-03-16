@@ -135,3 +135,7 @@ If you want to contribute to this project, follow these steps to set up your dev
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Credits
+
+This library builds on the incredible work of [Simon Willison](https://x.com/simonw) and his open-source tools. While this CLI primarily strings together three of his existing tools, the goal is to make them more accessible and streamlined for specific use cases to analyze large codebases.
